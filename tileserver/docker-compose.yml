@@ -1,0 +1,12 @@
+services:
+  tileserver:
+    image: maptiler/tileserver-gl:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config.json:/data/config.json
+      - ./styles:/data/styles
+      - ./mbtiles:/data/mbtiles
+      - ./fonts:/data/fonts
+    environment:
+      - TZ=UTC

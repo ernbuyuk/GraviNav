@@ -1,0 +1,23 @@
+{
+  "version": 8,
+  "sources": {
+    "terrain-dem": {
+      "type": "raster-dem",
+      "url": "mbtiles://{dem}",
+      "tileSize": 256,
+      "encoding": "mapbox"
+    }
+  },
+  "layers": [
+    {
+      "id": "hillshade-layer",
+      "type": "hillshade",
+      "source": "terrain-dem",
+      "paint": { "hillshade-exaggeration": 0.6 }
+    }
+  ],
+  "terrain": {
+    "source": "terrain-dem",
+    "exaggeration": 1.0
+  }
+}
