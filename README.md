@@ -79,6 +79,5 @@ Kısa notlar / ipuçları
 - `dem-api` sadece alternatif bir yol olup diskten blok-blok okur; büyük DEM'lerde performans düşebilir, dolayısıyla gerçek zamanlı izleme için `file/main.py`'deki bellek yaklaşımı tercih edilir.
 - WebSocket akışında `main.py` simülatör bir ölçüm üretir, particle filter predict+update yapar, `estimate`/`clusters`/`particles` JSON olarak gönderilir ve frontend bunları çizer.
 
-Daha fazlasını ister misin?
-------------------------
-Eğer istersen ben bu `README.md`'yi kısa bir `OVERVIEW.md` olarak ayrı dosyaya taşıyabilirim ya da çalıştırma adımlarını `Makefile`/`docker-compose` ile otomatikleştirebilirim.
+
+
